@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundImageSource="retro_futuristic.jpg">
+    <VerticalStackLayout
+        VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Sobre Nós"
+       FontFamily="KalamBold"
+       FontSize="50"
+       TextColor="{StaticResource SecondaryDarkText}" />
+
+        <Frame Margin="30">
+            <StackLayout  Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Desenvolvedor: " />
+                    <Label Text="Rafael Xavier Souza 2024" 
+                   TextColor="{StaticResource SecondaryDarkText}" />
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+        <Frame Margin="30">
+            <StackLayout  Orientation="Vertical" >
+                <VerticalStackLayout VerticalOptions="CenterAndExpand">
+                    <Label Text="Nós somos uma empresa de Hospedagem, cujo objetivo "/>
+                    <Label Text="é facilitar e tornar a sua viagem mais agradável."/>
+                </VerticalStackLayout>
+            </StackLayout>
+        </Frame>
+        <Button Text="Voltar"
+        HorizontalOptions="Center"
+        Clicked="Button_Clicked" />
+    </VerticalStackLayout>
+</ContentPage>
